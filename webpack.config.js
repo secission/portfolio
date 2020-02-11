@@ -1,3 +1,5 @@
-output: {
-  publicPath: ''
+module.exports = {
+  output: {
+    publicPath: ""
+  }
 }
