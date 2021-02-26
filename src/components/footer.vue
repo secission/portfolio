@@ -1,6 +1,6 @@
 <template>
     <footer>
-        Copyright © Gamut. All rights reserved.
+        Copyright © Secission. All rights reserved.
     </footer>
 </template>
 
