@@ -1,36 +1,40 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/Computer">Computer</router-link>
-      <router-link to="/Design">Design</router-link>
-      <router-link to="/Drawing">Drawing</router-link>
-      <router-link to="/Link">Link</router-link>
-      <router-link to="/Contacts">Contacts</router-link>
+    <div id="app">
+        <!--        <img alt="Vue logo" src="./assets/logo.png">-->
+        <Header />
+        <Index/>
+        <Footer />
     </div>
-    <router-view/>
-  </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+  import Header from './components/header.vue'
+  import Footer from './components/footer.vue'
+  // import Portfolio from './components/portfolio.vue'
+  // import Link from './components/link.vue'
+  // import Contacts from './components/contacts.vue'
+  import Index from './components/index.vue'
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+  export default {
+    name: 'App',
+    components: {
+      'Header': Header,
+      'Footer': Footer,
+      // 'Portfolio': Portfolio,
+      // 'Link': Link,
+      // 'Contacts': Contacts
+      'Index': Index
     }
   }
-}
+</script>
+
+<style>
+    #app {
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+        margin-top: 60px;
+    }
 </style>
