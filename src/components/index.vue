@@ -1,5 +1,10 @@
 <template>
-    <div>index</div>
+    <div>index345
+        <b-button>Button</b-button>
+        <b-button variant="danger">Button</b-button>
+        <b-button variant="success">Button</b-button>
+        <b-button variant="outline-primary">Button</b-button>
+    </div>
 </template>
 
 <script>
